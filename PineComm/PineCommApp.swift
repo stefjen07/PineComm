@@ -11,7 +11,9 @@ import SwiftUI
 struct PineCommApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			NavigationView {
+				RolePickerView()
+			}
         }
     }
 }
