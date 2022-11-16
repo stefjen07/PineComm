@@ -83,7 +83,13 @@ class MultipeerService: NSObject, ObservableObject {
 	}
 
 	func sendMessage(_ text: String) {
-		let message = Message(id: UUID(), text: text, date: Date(), sender: deviceId)
+		let message = Message(text: text, deviceId: deviceId)
+		messages.append(message)
+		sendMessage(message)
+	}
+
+	func sendImage(_ image: UIImage) {
+		let message = Message(image: image, deviceId: deviceId)
 		messages.append(message)
 		sendMessage(message)
 	}

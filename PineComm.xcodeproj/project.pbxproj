@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E758EDD29258DEB00AEEBB7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */; };
+		3E758EE12925936400AEEBB7 /* ARImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE02925936400AEEBB7 /* ARImageView.swift */; };
+		3E758EE32925946B00AEEBB7 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */; };
+		3E758EE529259DC500AEEBB7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE429259DC500AEEBB7 /* MessageView.swift */; };
 		3E8104502921879700DD97A7 /* PineCommApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81044F2921879700DD97A7 /* PineCommApp.swift */; };
 		3E8104542921879800DD97A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8104532921879800DD97A7 /* Assets.xcassets */; };
 		3E8104572921879800DD97A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8104562921879800DD97A7 /* Preview Assets.xcassets */; };
@@ -17,7 +21,6 @@
 		3E81047C292189DB00DD97A7 /* MultipeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81047B292189DA00DD97A7 /* MultipeerService.swift */; };
 		3E81047E292189E900DD97A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81047D292189E900DD97A7 /* Constants.swift */; };
 		3E81048129218F4F00DD97A7 /* ClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81048029218F4F00DD97A7 /* ClientView.swift */; };
-		3E810483292193B100DD97A7 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E810482292193B100DD97A7 /* String+extension.swift */; };
 		3E8104852921A1CF00DD97A7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8104842921A1CF00DD97A7 /* Message.swift */; };
 		3E8104872921A46A00DD97A7 /* ServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8104862921A46A00DD97A7 /* ServerView.swift */; };
 		3ECCC30929229B8200550CED /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECCC30829229B8200550CED /* ChatView.swift */; };
@@ -41,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3E758EE02925936400AEEBB7 /* ARImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARImageView.swift; sourceTree = "<group>"; };
+		3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
+		3E758EE429259DC500AEEBB7 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		3E81044C2921879600DD97A7 /* PineComm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PineComm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81044F2921879700DD97A7 /* PineCommApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PineCommApp.swift; sourceTree = "<group>"; };
 		3E8104532921879800DD97A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +62,6 @@
 		3E81047D292189E900DD97A7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3E81047F29218CC200DD97A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3E81048029218F4F00DD97A7 /* ClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientView.swift; sourceTree = "<group>"; };
-		3E810482292193B100DD97A7 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		3E8104842921A1CF00DD97A7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3E8104862921A46A00DD97A7 /* ServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerView.swift; sourceTree = "<group>"; };
 		3ECCC30829229B8200550CED /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -118,9 +124,12 @@
 				3E81047D292189E900DD97A7 /* Constants.swift */,
 				3E8104532921879800DD97A7 /* Assets.xcassets */,
 				3E8104552921879800DD97A7 /* Preview Content */,
-				3E810482292193B100DD97A7 /* String+extension.swift */,
+				3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */,
 				3E8104842921A1CF00DD97A7 /* Message.swift */,
 				3ECCC30829229B8200550CED /* ChatView.swift */,
+				3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */,
+				3E758EE02925936400AEEBB7 /* ARImageView.swift */,
+				3E758EE429259DC500AEEBB7 /* MessageView.swift */,
 			);
 			path = PineComm;
 			sourceTree = "<group>";
@@ -280,13 +289,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E758EE529259DC500AEEBB7 /* MessageView.swift in Sources */,
 				3E81047A292187B300DD97A7 /* RolePickerView.swift in Sources */,
+				3E758EE12925936400AEEBB7 /* ARImageView.swift in Sources */,
 				3E81048129218F4F00DD97A7 /* ClientView.swift in Sources */,
-				3E810483292193B100DD97A7 /* String+extension.swift in Sources */,
+				3E758EE32925946B00AEEBB7 /* UIImage+extension.swift in Sources */,
 				3E81047C292189DB00DD97A7 /* MultipeerService.swift in Sources */,
 				3ECCC30929229B8200550CED /* ChatView.swift in Sources */,
 				3E8104502921879700DD97A7 /* PineCommApp.swift in Sources */,
 				3E8104872921A46A00DD97A7 /* ServerView.swift in Sources */,
+				3E758EDD29258DEB00AEEBB7 /* ImagePicker.swift in Sources */,
 				3E81047E292189E900DD97A7 /* Constants.swift in Sources */,
 				3E8104852921A1CF00DD97A7 /* Message.swift in Sources */,
 			);

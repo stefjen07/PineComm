@@ -11,27 +11,45 @@ struct ChatView: View {
 	@Binding var messages: [Message]
 	var deviceId: String
 
+	@State var imageToShow: UIImage?
+
     var body: some View {
-		ScrollView {
-			VStack(alignment: .leading) {
+		VStack {
+			if messages.isEmpty {
+				Spacer()
 				HStack {
 					Spacer()
+					Text("Нет сообщений")
+						.foregroundColor(.secondary)
+					Spacer()
 				}
-				ForEach(messages) { message in
-					HStack {
-						if message.sender == deviceId {
-							Spacer()
+				Spacer()
+			} else {
+				GeometryReader { geometryProxy in
+					ScrollView(showsIndicators: false) {
+						ScrollViewReader { scrollProxy in
+							ForEach(messages) { message in
+								MessageView(
+									message: message,
+									deviceId: deviceId,
+									imageWidth: geometryProxy.size.width * 0.45,
+									imageToShow: $imageToShow
+								)
+								.id(message.id)
+							}
+							.onChange(of: messages.last?.id) { id in
+								scrollProxy.scrollTo(id, anchor: .bottom)
+							}
 						}
-						Text(message.text)
-							.padding(10)
-							.background(Color("SecondaryBackground"))
-							.cornerRadius(10)
-							.padding(.horizontal, 10)
 					}
+				}
+				.sheet(item: $imageToShow) { image in
+					ARImageView(image: image)
+						.edgesIgnoringSafeArea(.all)
 				}
 			}
 		}
-    }
+	}
 }
 
 struct ChatView_Previews: PreviewProvider {
