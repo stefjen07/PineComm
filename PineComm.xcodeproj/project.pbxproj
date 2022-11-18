@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3E4204C12926CED9002907DD /* ClientView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204C02926CED9002907DD /* ClientView-ViewModel.swift */; };
+		3E4204CA2927D15B002907DD /* ScrollViewProxy in Frameworks */ = {isa = PBXBuildFile; productRef = 3E4204C92927D15B002907DD /* ScrollViewProxy */; };
+		3E4204CC2927D1B7002907DD /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204CB2927D1B7002907DD /* View+extension.swift */; };
+		3E4204CF2927D1FD002907DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E4204D12927D1FD002907DD /* Localizable.strings */; };
+		3E4204D42927D272002907DD /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204D32927D272002907DD /* String+extension.swift */; };
 		3E758EDD29258DEB00AEEBB7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */; };
 		3E758EE12925936400AEEBB7 /* ARImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE02925936400AEEBB7 /* ARImageView.swift */; };
 		3E758EE32925946B00AEEBB7 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */; };
@@ -46,6 +50,10 @@
 
 /* Begin PBXFileReference section */
 		3E4204C02926CED9002907DD /* ClientView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientView-ViewModel.swift"; sourceTree = "<group>"; };
+		3E4204CB2927D1B7002907DD /* View+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+extension.swift"; sourceTree = "<group>"; };
+		3E4204D02927D1FD002907DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E4204D22927D248002907DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E4204D32927D272002907DD /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3E758EE02925936400AEEBB7 /* ARImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARImageView.swift; sourceTree = "<group>"; };
 		3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
@@ -74,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E4204CA2927D15B002907DD /* ScrollViewProxy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +142,9 @@
 				3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */,
 				3E758EE02925936400AEEBB7 /* ARImageView.swift */,
 				3E758EE429259DC500AEEBB7 /* MessageView.swift */,
+				3E4204CB2927D1B7002907DD /* View+extension.swift */,
+				3E4204D12927D1FD002907DD /* Localizable.strings */,
+				3E4204D32927D272002907DD /* String+extension.swift */,
 			);
 			path = PineComm;
 			sourceTree = "<group>";
@@ -178,6 +190,9 @@
 			dependencies = (
 			);
 			name = PineComm;
+			packageProductDependencies = (
+				3E4204C92927D15B002907DD /* ScrollViewProxy */,
+			);
 			productName = PineComm;
 			productReference = 3E81044C2921879600DD97A7 /* PineComm.app */;
 			productType = "com.apple.product-type.application";
@@ -248,8 +263,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 3E8104432921879600DD97A7;
+			packageReferences = (
+				3E4204C82927D15B002907DD /* XCRemoteSwiftPackageReference "ScrollViewProxy" */,
+			);
 			productRefGroup = 3E81044D2921879600DD97A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E8104572921879800DD97A7 /* Preview Assets.xcassets in Resources */,
+				3E4204CF2927D1FD002907DD /* Localizable.strings in Resources */,
 				3E8104542921879800DD97A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +314,7 @@
 			files = (
 				3E758EE529259DC500AEEBB7 /* MessageView.swift in Sources */,
 				3E4204C12926CED9002907DD /* ClientView-ViewModel.swift in Sources */,
+				3E4204CC2927D1B7002907DD /* View+extension.swift in Sources */,
 				3E81047A292187B300DD97A7 /* RolePickerView.swift in Sources */,
 				3E758EE12925936400AEEBB7 /* ARImageView.swift in Sources */,
 				3E81048129218F4F00DD97A7 /* ClientView.swift in Sources */,
@@ -302,6 +323,7 @@
 				3ECCC30929229B8200550CED /* ChatView.swift in Sources */,
 				3E8104502921879700DD97A7 /* PineCommApp.swift in Sources */,
 				3E8104872921A46A00DD97A7 /* ServerView.swift in Sources */,
+				3E4204D42927D272002907DD /* String+extension.swift in Sources */,
 				3E758EDD29258DEB00AEEBB7 /* ImagePicker.swift in Sources */,
 				3E81047E292189E900DD97A7 /* Constants.swift in Sources */,
 				3E8104852921A1CF00DD97A7 /* Message.swift in Sources */,
@@ -340,11 +362,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		3E4204D12927D1FD002907DD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E4204D02927D1FD002907DD /* en */,
+				3E4204D22927D248002907DD /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		3E81046E2921879800DD97A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -391,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -405,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -445,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -467,11 +503,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PineComm/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for image viewing in AR";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local network is used for messaging";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,11 +535,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PineComm/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for image viewing in AR";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local network is used for messaging";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -631,6 +671,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E4204C82927D15B002907DD /* XCRemoteSwiftPackageReference "ScrollViewProxy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Amzd/ScrollViewProxy.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E4204C92927D15B002907DD /* ScrollViewProxy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E4204C82927D15B002907DD /* XCRemoteSwiftPackageReference "ScrollViewProxy" */;
+			productName = ScrollViewProxy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3E8104442921879600DD97A7 /* Project object */;
 }

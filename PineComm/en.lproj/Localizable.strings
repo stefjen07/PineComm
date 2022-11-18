@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  PineComm
+
+  Created by Евгений on 18.11.22.
+  
+*/
+
+"server" = "Server";
+"client" = "Client";
+"choose-role" = "Choose a role";
+"message" = "Message";
+"no-messages" = "No messages";

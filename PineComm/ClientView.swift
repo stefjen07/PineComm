@@ -20,7 +20,7 @@ struct ClientView: View {
 				.frame(height: 2)
 				.background(Color("SecondaryBackground"))
 			HStack {
-				TextField("Сообщение", text: $viewModel.currentMessage)
+				TextField("message", text: $viewModel.currentMessage)
 				Button(action: viewModel.sendMessage, label: {
 					Image(systemName: "paperplane.fill")
 						.resizable()
@@ -40,7 +40,11 @@ struct ClientView: View {
 			.padding(.horizontal, 10)
 			.padding(.top, 5)
 			.padding(.bottom, 10)
-			.background(Color("SecondaryBackground").opacity(0.5))
+			.background(
+				Color("SecondaryBackground")
+					.opacity(0.5)
+					.edgesIgnoringSafeArea(.all)
+			)
 		}
 		.navigationBarItems(trailing: Button(action: viewModel.startPickingImage, label: {
 			Image(systemName: "photo.circle")

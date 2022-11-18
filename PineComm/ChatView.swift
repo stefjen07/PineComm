@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ScrollViewProxy
 
 struct ChatView: View {
 	@Binding var messages: [Message]
@@ -19,7 +20,7 @@ struct ChatView: View {
 				Spacer()
 				HStack {
 					Spacer()
-					Text("Нет сообщений")
+					Text("no-messages")
 						.foregroundColor(.secondary)
 					Spacer()
 				}
@@ -35,9 +36,9 @@ struct ChatView: View {
 									imageWidth: geometryProxy.size.width * 0.45,
 									imageToShow: $imageToShow
 								)
-								.id(message.id)
+								.scrollId(message.id)
 							}
-							.onChange(of: messages.last?.id) { id in
+							.valueChanged(value: messages.last?.id) { id in
 								scrollProxy.scrollTo(id, anchor: .bottom)
 							}
 						}
