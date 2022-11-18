@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E4204C12926CED9002907DD /* ClientView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204C02926CED9002907DD /* ClientView-ViewModel.swift */; };
 		3E758EDD29258DEB00AEEBB7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */; };
 		3E758EE12925936400AEEBB7 /* ARImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE02925936400AEEBB7 /* ARImageView.swift */; };
 		3E758EE32925946B00AEEBB7 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E4204C02926CED9002907DD /* ClientView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientView-ViewModel.swift"; sourceTree = "<group>"; };
 		3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3E758EE02925936400AEEBB7 /* ARImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARImageView.swift; sourceTree = "<group>"; };
 		3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				3E81044F2921879700DD97A7 /* PineCommApp.swift */,
 				3E810479292187B300DD97A7 /* RolePickerView.swift */,
 				3E81048029218F4F00DD97A7 /* ClientView.swift */,
+				3E4204C02926CED9002907DD /* ClientView-ViewModel.swift */,
 				3E8104862921A46A00DD97A7 /* ServerView.swift */,
 				3E81047B292189DA00DD97A7 /* MultipeerService.swift */,
 				3E81047D292189E900DD97A7 /* Constants.swift */,
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E758EE529259DC500AEEBB7 /* MessageView.swift in Sources */,
+				3E4204C12926CED9002907DD /* ClientView-ViewModel.swift in Sources */,
 				3E81047A292187B300DD97A7 /* RolePickerView.swift in Sources */,
 				3E758EE12925936400AEEBB7 /* ARImageView.swift in Sources */,
 				3E81048129218F4F00DD97A7 /* ClientView.swift in Sources */,

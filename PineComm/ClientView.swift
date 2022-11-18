@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct ClientView: View {
-	@ObservedObject var multipeerService = MultipeerService(role: .client)
-
-	@State var currentMessage = ""
-	@State var isPickingImage = false
+	@ObservedObject var viewModel: ViewModel
 
     var body: some View {
 		VStack(alignment: .leading, spacing: 0) {
-			ChatView(messages: $multipeerService.messages, deviceId: multipeerService.deviceId)
+			ChatView(messages: viewModel.messages, deviceId: viewModel.deviceId)
 
 			HStack {
 				Spacer()
@@ -23,11 +20,8 @@ struct ClientView: View {
 				.frame(height: 2)
 				.background(Color("SecondaryBackground"))
 			HStack {
-				TextField("Сообщение", text: $currentMessage)
-				Button(action: {
-					multipeerService.sendMessage(currentMessage)
-					currentMessage = ""
-				}, label: {
+				TextField("Сообщение", text: $viewModel.currentMessage)
+				Button(action: viewModel.sendMessage, label: {
 					Image(systemName: "paperplane.fill")
 						.resizable()
 						.foregroundColor(.white)
@@ -37,10 +31,10 @@ struct ClientView: View {
 						.offset(x: -2)
 						.background(
 							Circle()
-								.foregroundColor(currentMessage.isEmpty ? .gray : .blue)
+								.foregroundColor(viewModel.isSendingDisabled ? .gray : .blue)
 						)
 				})
-				.disabled(currentMessage.isEmpty)
+				.disabled(viewModel.isSendingDisabled)
 				.padding(5)
 			}
 			.padding(.horizontal, 10)
@@ -48,25 +42,20 @@ struct ClientView: View {
 			.padding(.bottom, 10)
 			.background(Color("SecondaryBackground").opacity(0.5))
 		}
-		.navigationBarItems(trailing: Button(action: {
-			isPickingImage = true
-		}, label: {
+		.navigationBarItems(trailing: Button(action: viewModel.startPickingImage, label: {
 			Image(systemName: "photo.circle")
 		}))
-		.sheet(isPresented: $isPickingImage) {
+		.sheet(isPresented: $viewModel.isPickingImage) {
 			ImagePicker { image in
-				multipeerService.sendImage(image)
+				viewModel.sendImage(image)
 			}
 			.edgesIgnoringSafeArea(.all)
-		}
-		.onAppear {
-			multipeerService.start()
 		}
     }
 }
 
 struct ClientView_Previews: PreviewProvider {
     static var previews: some View {
-        ClientView()
+		ClientView(viewModel: .init())
     }
 }

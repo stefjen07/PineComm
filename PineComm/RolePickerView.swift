@@ -32,15 +32,6 @@ enum Role: String, Identifiable, CaseIterable {
 			return .blue
 		}
 	}
-
-	var destination: some View {
-		switch self {
-		case .server:
-			return AnyView(ServerView())
-		case .client:
-			return AnyView(ClientView())
-		}
-	}
 }
 
 struct RolePickerView: View {
@@ -52,7 +43,14 @@ struct RolePickerView: View {
 				.bold()
 			ForEach(Role.allCases) { role in
 				Spacer()
-				NavigationLink(destination: role.destination, label: {
+				NavigationLink(destination: {
+					switch role {
+					case .server:
+						AnyView(ServerView())
+					case .client:
+						AnyView(ClientView(viewModel: .init()))
+					}
+				}, label: {
 					Text(role.description)
 						.font(.title)
 						.bold()

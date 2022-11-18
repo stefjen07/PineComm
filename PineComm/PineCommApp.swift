@@ -14,6 +14,7 @@ struct PineCommApp: App {
 			NavigationView {
 				RolePickerView()
 			}
+			.navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }
