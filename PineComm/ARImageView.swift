@@ -19,16 +19,6 @@ struct ARImageView: UIViewRepresentable {
 		arView.session.run(configuration)
 		arView.delegate = context.coordinator
 
-		let imageNode = SCNNode()
-		let geometry = SCNPlane()
-
-		let material = SCNMaterial()
-		material.diffuse.contents = image
-		geometry.materials = [material]
-
-		imageNode.geometry = geometry
-		arView.scene.rootNode.addChildNode(imageNode)
-
 		return arView
 	}
 
@@ -37,11 +27,36 @@ struct ARImageView: UIViewRepresentable {
 	}
 
 	func makeCoordinator() -> Coordinator {
-		return Coordinator()
+		return Coordinator(image: image)
 	}
 
 	class Coordinator: NSObject, ARSCNViewDelegate {
-		
+		var image: UIImage
+		var imageNode: SCNNode?
+
+		init(image: UIImage) {
+			self.image = image
+		}
+
+		func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+			guard let planeAnchor = anchor as? ARPlaneAnchor, imageNode == nil else { return }
+
+			let width = CGFloat(planeAnchor.extent.x)
+			let height = CGFloat(planeAnchor.extent.x) * image.size.height / image.size.width
+
+			let imageNode = SCNNode()
+			let geometry = SCNPlane(width: width, height: height)
+
+			let material = SCNMaterial()
+			material.diffuse.contents = image
+			geometry.materials = [material]
+
+			imageNode.geometry = geometry
+			imageNode.eulerAngles.x = -.pi/2
+
+			node.addChildNode(imageNode)
+			self.imageNode = imageNode
+		}
 	}
 }
 

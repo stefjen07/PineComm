@@ -12,13 +12,18 @@
 		3E4204CC2927D1B7002907DD /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204CB2927D1B7002907DD /* View+extension.swift */; };
 		3E4204CF2927D1FD002907DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E4204D12927D1FD002907DD /* Localizable.strings */; };
 		3E4204D42927D272002907DD /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204D32927D272002907DD /* String+extension.swift */; };
+		3E4204EC29298119002907DD /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204EB29298119002907DD /* Role.swift */; };
+		3E4204F12929818C002907DD /* MultipeerService+MCNearbyServiceBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204F02929818C002907DD /* MultipeerService+MCNearbyServiceBrowserDelegate.swift */; };
+		3E4204F3292981C2002907DD /* MultipeerService+MCNearbyServiceAdvertiserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204F2292981C2002907DD /* MultipeerService+MCNearbyServiceAdvertiserDelegate.swift */; };
+		3E4204F5292981E3002907DD /* MultipeerService-MCSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204F4292981E3002907DD /* MultipeerService-MCSessionDelegate.swift */; };
+		3E4204F729298471002907DD /* ServerView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204F629298471002907DD /* ServerView-ViewModel.swift */; };
+		3E4204FC29298F2D002907DD /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4204FB29298F2D002907DD /* Peer.swift */; };
 		3E758EDD29258DEB00AEEBB7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */; };
 		3E758EE12925936400AEEBB7 /* ARImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE02925936400AEEBB7 /* ARImageView.swift */; };
 		3E758EE32925946B00AEEBB7 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */; };
 		3E758EE529259DC500AEEBB7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E758EE429259DC500AEEBB7 /* MessageView.swift */; };
 		3E8104502921879700DD97A7 /* PineCommApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81044F2921879700DD97A7 /* PineCommApp.swift */; };
 		3E8104542921879800DD97A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8104532921879800DD97A7 /* Assets.xcassets */; };
-		3E8104572921879800DD97A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8104562921879800DD97A7 /* Preview Assets.xcassets */; };
 		3E8104612921879800DD97A7 /* PineCommTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8104602921879800DD97A7 /* PineCommTests.swift */; };
 		3E81046B2921879800DD97A7 /* PineCommUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81046A2921879800DD97A7 /* PineCommUITests.swift */; };
 		3E81046D2921879800DD97A7 /* PineCommUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81046C2921879800DD97A7 /* PineCommUITestsLaunchTests.swift */; };
@@ -54,6 +59,12 @@
 		3E4204D02927D1FD002907DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3E4204D22927D248002907DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3E4204D32927D272002907DD /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		3E4204EB29298119002907DD /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		3E4204F02929818C002907DD /* MultipeerService+MCNearbyServiceBrowserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultipeerService+MCNearbyServiceBrowserDelegate.swift"; sourceTree = "<group>"; };
+		3E4204F2292981C2002907DD /* MultipeerService+MCNearbyServiceAdvertiserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultipeerService+MCNearbyServiceAdvertiserDelegate.swift"; sourceTree = "<group>"; };
+		3E4204F4292981E3002907DD /* MultipeerService-MCSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultipeerService-MCSessionDelegate.swift"; sourceTree = "<group>"; };
+		3E4204F629298471002907DD /* ServerView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServerView-ViewModel.swift"; sourceTree = "<group>"; };
+		3E4204FB29298F2D002907DD /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
 		3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3E758EE02925936400AEEBB7 /* ARImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARImageView.swift; sourceTree = "<group>"; };
 		3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
@@ -61,7 +72,6 @@
 		3E81044C2921879600DD97A7 /* PineComm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PineComm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81044F2921879700DD97A7 /* PineCommApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PineCommApp.swift; sourceTree = "<group>"; };
 		3E8104532921879800DD97A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3E8104562921879800DD97A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E81045C2921879800DD97A7 /* PineCommTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PineCommTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8104602921879800DD97A7 /* PineCommTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PineCommTests.swift; sourceTree = "<group>"; };
 		3E8104662921879800DD97A7 /* PineCommUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PineCommUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +113,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E4204D52927D5BB002907DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */,
+				3E4204CB2927D1B7002907DD /* View+extension.swift */,
+				3E4204D32927D272002907DD /* String+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E4204E9292980BB002907DD /* ClientView */ = {
+			isa = PBXGroup;
+			children = (
+				3E81048029218F4F00DD97A7 /* ClientView.swift */,
+				3E4204C02926CED9002907DD /* ClientView-ViewModel.swift */,
+			);
+			path = ClientView;
+			sourceTree = "<group>";
+		};
+		3E4204EA292980D8002907DD /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				3ECCC30829229B8200550CED /* ChatView.swift */,
+				3E758EE429259DC500AEEBB7 /* MessageView.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		3E4204ED29298137002907DD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3E4204EB29298119002907DD /* Role.swift */,
+				3E8104842921A1CF00DD97A7 /* Message.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3E4204EE2929815C002907DD /* MultipeerService */ = {
+			isa = PBXGroup;
+			children = (
+				3E81047B292189DA00DD97A7 /* MultipeerService.swift */,
+				3E4204F02929818C002907DD /* MultipeerService+MCNearbyServiceBrowserDelegate.swift */,
+				3E4204F2292981C2002907DD /* MultipeerService+MCNearbyServiceAdvertiserDelegate.swift */,
+				3E4204F4292981E3002907DD /* MultipeerService-MCSessionDelegate.swift */,
+				3E4204FB29298F2D002907DD /* Peer.swift */,
+			);
+			path = MultipeerService;
+			sourceTree = "<group>";
+		};
+		3E4204F8292984D8002907DD /* ServerView */ = {
+			isa = PBXGroup;
+			children = (
+				3E8104862921A46A00DD97A7 /* ServerView.swift */,
+				3E4204F629298471002907DD /* ServerView-ViewModel.swift */,
+			);
+			path = ServerView;
+			sourceTree = "<group>";
+		};
+		3E4204F929298593002907DD /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				3E8104532921879800DD97A7 /* Assets.xcassets */,
+				3E4204D12927D1FD002907DD /* Localizable.strings */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		3E8104432921879600DD97A7 = {
 			isa = PBXGroup;
 			children = (
@@ -126,35 +203,21 @@
 		3E81044E2921879600DD97A7 /* PineComm */ = {
 			isa = PBXGroup;
 			children = (
+				3E4204F929298593002907DD /* Interface */,
+				3E4204EE2929815C002907DD /* MultipeerService */,
+				3E4204ED29298137002907DD /* Data */,
+				3E4204EA292980D8002907DD /* ChatView */,
+				3E4204E9292980BB002907DD /* ClientView */,
+				3E4204F8292984D8002907DD /* ServerView */,
+				3E4204D52927D5BB002907DD /* Extensions */,
 				3E81047F29218CC200DD97A7 /* Info.plist */,
 				3E81044F2921879700DD97A7 /* PineCommApp.swift */,
 				3E810479292187B300DD97A7 /* RolePickerView.swift */,
-				3E81048029218F4F00DD97A7 /* ClientView.swift */,
-				3E4204C02926CED9002907DD /* ClientView-ViewModel.swift */,
-				3E8104862921A46A00DD97A7 /* ServerView.swift */,
-				3E81047B292189DA00DD97A7 /* MultipeerService.swift */,
 				3E81047D292189E900DD97A7 /* Constants.swift */,
-				3E8104532921879800DD97A7 /* Assets.xcassets */,
-				3E8104552921879800DD97A7 /* Preview Content */,
-				3E758EE22925946B00AEEBB7 /* UIImage+extension.swift */,
-				3E8104842921A1CF00DD97A7 /* Message.swift */,
-				3ECCC30829229B8200550CED /* ChatView.swift */,
 				3E758EDC29258DEB00AEEBB7 /* ImagePicker.swift */,
 				3E758EE02925936400AEEBB7 /* ARImageView.swift */,
-				3E758EE429259DC500AEEBB7 /* MessageView.swift */,
-				3E4204CB2927D1B7002907DD /* View+extension.swift */,
-				3E4204D12927D1FD002907DD /* Localizable.strings */,
-				3E4204D32927D272002907DD /* String+extension.swift */,
 			);
 			path = PineComm;
-			sourceTree = "<group>";
-		};
-		3E8104552921879800DD97A7 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3E8104562921879800DD97A7 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		3E81045F2921879800DD97A7 /* PineCommTests */ = {
@@ -285,7 +348,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8104572921879800DD97A7 /* Preview Assets.xcassets in Resources */,
 				3E4204CF2927D1FD002907DD /* Localizable.strings in Resources */,
 				3E8104542921879800DD97A7 /* Assets.xcassets in Resources */,
 			);
@@ -313,16 +375,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E758EE529259DC500AEEBB7 /* MessageView.swift in Sources */,
+				3E4204F12929818C002907DD /* MultipeerService+MCNearbyServiceBrowserDelegate.swift in Sources */,
 				3E4204C12926CED9002907DD /* ClientView-ViewModel.swift in Sources */,
 				3E4204CC2927D1B7002907DD /* View+extension.swift in Sources */,
 				3E81047A292187B300DD97A7 /* RolePickerView.swift in Sources */,
 				3E758EE12925936400AEEBB7 /* ARImageView.swift in Sources */,
+				3E4204FC29298F2D002907DD /* Peer.swift in Sources */,
 				3E81048129218F4F00DD97A7 /* ClientView.swift in Sources */,
 				3E758EE32925946B00AEEBB7 /* UIImage+extension.swift in Sources */,
+				3E4204EC29298119002907DD /* Role.swift in Sources */,
 				3E81047C292189DB00DD97A7 /* MultipeerService.swift in Sources */,
+				3E4204F3292981C2002907DD /* MultipeerService+MCNearbyServiceAdvertiserDelegate.swift in Sources */,
 				3ECCC30929229B8200550CED /* ChatView.swift in Sources */,
+				3E4204F729298471002907DD /* ServerView-ViewModel.swift in Sources */,
 				3E8104502921879700DD97A7 /* PineCommApp.swift in Sources */,
 				3E8104872921A46A00DD97A7 /* ServerView.swift in Sources */,
+				3E4204F5292981E3002907DD /* MultipeerService-MCSessionDelegate.swift in Sources */,
 				3E4204D42927D272002907DD /* String+extension.swift in Sources */,
 				3E758EDD29258DEB00AEEBB7 /* ImagePicker.swift in Sources */,
 				3E81047E292189E900DD97A7 /* Constants.swift in Sources */,
@@ -498,7 +566,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PineComm/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S4TJY8UCM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -530,7 +598,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PineComm/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S4TJY8UCM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

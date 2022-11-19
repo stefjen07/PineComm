@@ -11,6 +11,7 @@ import ScrollViewProxy
 struct ChatView: View {
 	@Binding var messages: [Message]
 	var deviceId: String
+	var isServerConnected: Bool
 
 	@State var imageToShow: UIImage?
 
@@ -21,6 +22,15 @@ struct ChatView: View {
 				HStack {
 					Spacer()
 					Text("no-messages")
+						.foregroundColor(.secondary)
+					Spacer()
+				}
+				Spacer()
+			} else if !isServerConnected {
+				Spacer()
+				HStack {
+					Spacer()
+					Text("no-servers-connected")
 						.foregroundColor(.secondary)
 					Spacer()
 				}
@@ -55,6 +65,6 @@ struct ChatView: View {
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-		ChatView(messages: .constant([]), deviceId: "")
+		ChatView(messages: .constant([]), deviceId: "", isServerConnected: true)
     }
 }

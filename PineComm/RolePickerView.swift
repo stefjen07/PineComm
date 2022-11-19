@@ -7,33 +7,6 @@
 
 import SwiftUI
 
-enum Role: String, Identifiable, CaseIterable {
-	case server
-	case client
-
-	var id: Int {
-		rawValue.hashValue
-	}
-
-	var description: String {
-		switch self {
-		case .server:
-			return "server".localized
-		case .client:
-			return "client".localized
-		}
-	}
-
-	var color: Color {
-		switch self {
-		case .server:
-			return .red
-		case .client:
-			return .blue
-		}
-	}
-}
-
 struct RolePickerView: View {
     var body: some View {
 		VStack {
@@ -46,7 +19,7 @@ struct RolePickerView: View {
 				NavigationLink(destination: {
 					switch role {
 					case .server:
-						AnyView(ServerView())
+						AnyView(ServerView(viewModel: .init()))
 					case .client:
 						AnyView(ClientView(viewModel: .init()))
 					}

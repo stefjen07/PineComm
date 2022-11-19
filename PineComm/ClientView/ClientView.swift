@@ -12,7 +12,7 @@ struct ClientView: View {
 
     var body: some View {
 		VStack(alignment: .leading, spacing: 0) {
-			ChatView(messages: viewModel.messages, deviceId: viewModel.deviceId)
+			ChatView(messages: $viewModel.messages, deviceId: viewModel.deviceId, isServerConnected: viewModel.isServerConnected)
 
 			HStack {
 				Spacer()
@@ -31,7 +31,7 @@ struct ClientView: View {
 						.offset(x: -2)
 						.background(
 							Circle()
-								.foregroundColor(viewModel.isSendingDisabled ? .gray : .blue)
+								.foregroundColor(viewModel.isSendingDisabled ? .gray : .accentColor)
 						)
 				})
 				.disabled(viewModel.isSendingDisabled)
@@ -54,6 +54,12 @@ struct ClientView: View {
 				viewModel.sendImage(image)
 			}
 			.edgesIgnoringSafeArea(.all)
+		}
+		.onAppear {
+			viewModel.start()
+		}
+		.onDisappear {
+			viewModel.stop()
 		}
     }
 }

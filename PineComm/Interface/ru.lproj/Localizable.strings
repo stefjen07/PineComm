@@ -11,3 +11,5 @@
 "choose-role" = "Выберите роль";
 "message" = "Сообщение";
 "no-messages" = "Нет сообщений";
+"no-servers-connected" = "Нет подключенных серверов";
+

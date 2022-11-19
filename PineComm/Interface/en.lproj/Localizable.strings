@@ -11,3 +11,4 @@
 "choose-role" = "Choose a role";
 "message" = "Message";
 "no-messages" = "No messages";
+"no-servers-connected" = "No servers connected";
